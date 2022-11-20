@@ -1,19 +1,28 @@
 import { View} from 'react-native';
 
-import WelcomeScreen from './app/screens/WelcomeScreen';
-import ViewImageScreen from './app/screens/ViewImageScreen';
+import AccountScreen from './app/screens/AccountScreen';
 import MessagesScreen from './app/screens/MessagesScreen';
-import AppText from './app/components/AppText';
+import ViewImageScreen from './app/screens/ViewImageScreen';
+import WelcomeScreen from './app/screens/WelcomeScreen';
+
+
 import AppButton from './app/components/AppButton';
+import AppText from './app/components/AppText';
 import Card from './app/components/Card';
-import ListingDetailsScreen from './app/components/ListingDetailsScreen';
+import Icon from './app/components/Icon';
+import ListItem from './app/components/ListItem';
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
+import ListingsScreen from './app/screens/ListingsScreen';
+
 
 export default function App() {
   return (
     // <WelcomeScreen />
     // <ViewImageScreen />
     // <ListingDetailsScreen />
-    <MessagesScreen/>
+    <ListingsScreen/>
+    // <MessagesScreen/>
+    // <AccountScreen/>
   )
 }
   

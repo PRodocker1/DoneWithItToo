@@ -3,10 +3,10 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 import Constants from 'expo-constants'
 
 
-const Screen = ({ children }) => {
+const Screen = ({ children, style}) => {
   return (
-    <SafeAreaView style={styles.screen}>
-      {children}
+    <SafeAreaView style={[styles.screen, style]}>
+      <View style={style}>{children}</View>
     </SafeAreaView>
   )
 }

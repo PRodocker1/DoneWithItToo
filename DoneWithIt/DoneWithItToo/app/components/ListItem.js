@@ -7,7 +7,7 @@ import colors from '../config/colors'
 
 
 
-const ListItem = ({ title, subTitle, image, onPress}) => {
+const ListItem = ({ title, subTitle, image, onPress, renderRightActions }) => {
   return (
     <Swipeable renderRightActions={renderRightActions} >
       <TouchableHighlight 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginRight: 10,
   },
-  price: {
+  price: { 
     color: colors.medium,
   },
   title: {
